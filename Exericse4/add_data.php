@@ -1,4 +1,4 @@
-<!DOCTYPE HTML>  
+<!DOCTYPE html PUBLIC "-//W3C//DTD XHTML 1.0 Transitional//EN" "http://www.w3.org/TR/xhtml1/DTD/xhtml1-transitional.dtd">
 <?php
 include_once 'dbconfig.php';
 if(isset($_POST['btn-save']))
@@ -21,27 +21,15 @@ if(isset($_POST['btn-save']))
 <html xmlns="http://www.w3.org/1999/xhtml">
 <head>
 <meta http-equiv="Content-Type" content="text/html; charset=utf-8" />
-<title>Welcome Users! - By Yours Truly</title>
+<title>CRUD Operations With PHP and MySql - By Cleartuts</title>
 <link rel="stylesheet" href="style.css" type="text/css" />
 </head>
 <body>
 <center>
-<br>
-<CENTER>
-		<CENTER> <a href="http://cooltext.com"><img src="https://images.cooltext.com/4784961.gif" width="750" height="180" alt="Albern Joseph P. Santos
-            "Bern"" /></a>
-			
-			<br>
-		<br>
-		<table align="center">
-			<tr>
-				<td><img width ="350" height = "350" src="IT.jpg" border="5"/></td>
-				<td><img width ="350" height = "350" src="Traveler.jpg" border="5"/></td>
-			</tr>
-		</table>
-		<div id="header">
+
+<div id="header">
  <div id="content">
-    <label>Welcome Users! - By Yours Truly</label>
+    <label>CRUD Operations With PHP and MySql - By Cleartuts</label>
     </div>
 </div>
 <div id="body">
@@ -70,9 +58,3 @@ if(isset($_POST['btn-save']))
 
 </center>
 </body>
-		
-
-
-</body>
-</html>
-
