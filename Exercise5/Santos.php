@@ -38,6 +38,7 @@ if(isset($_POST['btn-save']))
 				<td><img width ="350" height = "350" src="IT.jpg" border="5"/></td>
 				<td><img width ="350" height = "350" src="Traveler.jpg" border="5"/></td>
 			</tr>
+			
 		</table>
 		<div id="header">
  <div id="content">
