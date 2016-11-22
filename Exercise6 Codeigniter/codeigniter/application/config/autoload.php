@@ -27,6 +27,20 @@ defined('BASEPATH') OR exit('No direct script access allowed');
 | 5. Custom config files
 | 6. Language files
 | 7. Models
+| 8.
+|
+|
+|
+|
+|
+|
+|
+|
+|
+|
+|
+|
+|
 |
 */
 
