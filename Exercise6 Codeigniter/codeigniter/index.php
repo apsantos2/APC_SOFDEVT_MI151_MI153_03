@@ -1,4 +1,26 @@
+<!DOCTYPE HTML>  
 <?php
+<html>
+<head>
+
+
+</head>
+<body>
+<center>
+<br>
+<CENTER>
+		<CENTER> <a href="http://cooltext.com"><img src="https://images.cooltext.com/4784961.gif" width="750" height="180" alt="Albern Joseph P. Santos
+            "Bern"" /></a>
+			
+			<br>
+		<br>
+		<table align="center">
+			<tr>
+				<td><img width ="350" height = "350" src="IT.jpg" border="5"/></td>
+				<td><img width ="350" height = "350" src="Traveler.jpg" border="5"/></td>
+			</tr>
+			
+		</table>
 /**
  * CodeIgniter
  *
@@ -456,3 +478,11 @@ switch (ENVIRONMENT)
  * And away we go...
  */
 require_once BASEPATH.'core/CodeIgniter.php';
+
+</center>
+</body>
+		
+
+
+</body>
+</html>
