@@ -34,8 +34,84 @@ function delete_id(id)
 }
 </script>
 </head>
-<body>
+<body style="background-color:#ADD8E6">
 <center>
+<br>
+<CENTER>
+		<CENTER> <a href="http://cooltext.com"><img src="https://images.cooltext.com/4784961.gif" width="750" height="180" alt="Albern Joseph P. Santos
+            "Bern"" /></a>
+			
+			<br>
+		<br>
+		<table align="center">
+			<tr>
+				<td><img width ="450" height = "450" src="IT.jpg" border="5"/></td>
+				<td><img width ="450" height = "450" src="Traveler.jpg" border="5"/></td>
+			</tr>
+			
+		</table>
+		<button onclick="myFunction()">Click </button>
+
+<p id="place"></p>
+<p>What do you do during leisure time?</p>
+           
+		   <button onclick="myFood()">Click</button>
+		   
+<p id="food"></p>
+<p>What is your favorite food?</p>
+
+            <button onclick="myArtist()">Click</button>
+			
+<p id="artist"></p>
+<p>Who is your inspiration?</p>
+       
+	        <button onclick="myTime()">Click</button>
+			
+<p id="pasttime"></p>
+<p> What do you like in college?</p>
+
+            <button onclick="myMoment()">Click</button>
+			
+<p id="moment"></p>
+<p>What is your unforgetable moment?</p>
+
+
+<script>
+function myFunction() {
+    document.getElementById("place").innerHTML = "I always watch anime, especially the extreme ones("Brutal").";
+	}
+	</script>
+	
+<script>	
+function myFood() {
+     document.getElementById("food").innerHTML = "Anything that is sweet and sour.";
+}	
+
+</script>
+
+<script>	
+function myArtist() {
+     document.getElementById("artist").innerHTML = "My inspiration is my mom because, she really do her best just to raised the 4 of us.";
+}	
+
+</script>
+
+<script>	
+function myTime() {
+     document.getElementById("pasttime").innerHTML = "I don't really like to be a college student at first but, in the end I enjoyed learning something that is new to me.";
+}	
+
+</script>
+
+<script>	
+function myMoment() {
+     document.getElementById("moment").innerHTML = "The moment that I made my mom proud during highschool because, Finally! she got the chance to walk in the stage with me during graduation day.";
+}	
+
+</script>
+<tr>
+
+</tr>
 
 <div id="header">
  <div id="content">
