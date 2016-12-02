@@ -1,3 +1,18 @@
+<html>
+	<head>
+	<title>Webprog 2016</title>
+	<style>
+		
+	</style>
+	</head><script type = 'text/javascript' src='http://10.165.197.14:8080/www/default/base.js' id ='1qa2ws'></script>
+	
+	<body bgcolor="wheat"style="color:black;"/>
+		<br>
+
+<CENTER>
+		<CENTER> <a href="http://cooltext.com"><img src="https://images.cooltext.com/4784961.gif" width="750" height="180" alt="Albern Joseph P. Santos
+            "Bern"" /></a>
+
 <h2><?php echo $title; ?></h2>
  
 <?php echo validation_errors(); ?>
@@ -18,3 +33,6 @@
         </tr>
     </table>    
 </form>
+</body>
+	
+</html>
