@@ -1,6 +1,5 @@
 <?php
 use yii\helpers\Url as Url;
-
 class HomeCest
 {
     public function ensureThatHomePageWorks(AcceptanceTester $I)
