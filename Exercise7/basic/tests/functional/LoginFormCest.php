@@ -5,13 +5,10 @@ class LoginFormCest
     {
         $I->amOnRoute('site/login');
     }
-
     public function openLoginPage(\FunctionalTester $I)
     {
         $I->see('Login', 'h1');
-
     }
-
     // demonstrates `amLoggedInAs` method
     public function internalLoginById(\FunctionalTester $I)
     {
@@ -19,7 +16,6 @@ class LoginFormCest
         $I->amOnPage('/');
         $I->see('Logout (admin)');
     }
-
     // demonstrates `amLoggedInAs` method
     public function internalLoginByInstance(\FunctionalTester $I)
     {
@@ -27,7 +23,6 @@ class LoginFormCest
         $I->amOnPage('/');
         $I->see('Logout (admin)');
     }
-
     public function loginWithEmptyCredentials(\FunctionalTester $I)
     {
         $I->submitForm('#login-form', []);
@@ -35,7 +30,6 @@ class LoginFormCest
         $I->see('Username cannot be blank.');
         $I->see('Password cannot be blank.');
     }
-
     public function loginWithWrongCredentials(\FunctionalTester $I)
     {
         $I->submitForm('#login-form', [
@@ -45,7 +39,6 @@ class LoginFormCest
         $I->expectTo('see validations errors');
         $I->see('Incorrect username or password.');
     }
-
     public function loginSuccessfully(\FunctionalTester $I)
     {
         $I->submitForm('#login-form', [
