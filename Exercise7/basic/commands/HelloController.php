@@ -4,11 +4,8 @@
  * @copyright Copyright (c) 2008 Yii Software LLC
  * @license http://www.yiiframework.com/license/
  */
-
 namespace app\commands;
-
 use yii\console\Controller;
-
 /**
  * This command echoes the first argument that you have entered.
  *
