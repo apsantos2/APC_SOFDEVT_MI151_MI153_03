@@ -5,12 +5,10 @@ class ContactFormCest
     {
         $I->amOnPage(['site/contact']);
     }
-
     public function openContactPage(\FunctionalTester $I)
     {
         $I->see('Contact', 'h1');        
     }
-
     public function submitEmptyForm(\FunctionalTester $I)
     {
         $I->submitForm('#contact-form', []);
@@ -22,7 +20,6 @@ class ContactFormCest
         $I->see('Body cannot be blank');
         $I->see('The verification code is incorrect');
     }
-
     public function submitFormWithIncorrectEmail(\FunctionalTester $I)
     {
         $I->submitForm('#contact-form', [
@@ -39,7 +36,6 @@ class ContactFormCest
         $I->dontSee('Body cannot be blank', '.help-inline');
         $I->dontSee('The verification code is incorrect', '.help-inline');        
     }
-
     public function submitFormSuccessfully(\FunctionalTester $I)
     {
         $I->submitForm('#contact-form', [
