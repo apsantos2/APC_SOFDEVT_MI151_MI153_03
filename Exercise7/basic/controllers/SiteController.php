@@ -6,6 +6,9 @@ use yii\web\Controller;
 use yii\filters\VerbFilter;
 use app\models\LoginForm;
 use app\models\ContactForm;
+use app\models\UserFormModel;
+use app\models\Trivias;
+use yii\db\Expression;
 class SiteController extends Controller
 {
     /**
@@ -55,7 +58,14 @@ class SiteController extends Controller
      */
     public function actionIndex()
     {
-        return $this->render('index');
+		$query = Trivias::find()
+		->orderBy(new Expression('rand()'))
+		->limit(5)
+		->all();
+		
+        return $this->render('index', [
+			'trivias' => $query,
+        ]);
     }
     /**
      * Login action.
@@ -110,16 +120,16 @@ class SiteController extends Controller
     {
         return $this->render('about');
     }
-    public function actionNet()
-    {
-        return $this->render('net');
-    }
-     public function actionWorks()
-    {
-        return $this->render('works');
-    }
-    public function actionTrivia()
-    {
-        return $this->render('trivia');
-    }
+	
+	public function actionUser()	
+	{
+		$model = new UserFormModel;
+		
+		if($model->load(Yii::$app->request->post()) && $model->validate())
+		{
+			Yii::$app->session->setFlash('success','Your data has been entered successfuly');
+		}
+			return $this->render('userFormView',['model'=>$model]);
+		
+	}
 }
